@@ -122,8 +122,8 @@ main = tkinter.Tk()
 main.geometry("1000x700")
 
 ### ボタン作成・配置
-button = tkinter.Button(main, text="ファイル選択", command=cv2_to_tk(find_circle(tk_to_cv2(select_photo()))))
-button.pack()
+#button = tkinter.Button(main, text="ファイル選択", command=cv2_to_tk(find_circle(tk_to_cv2(select_photo()))))
+#button.pack()
 
 image = cv2_to_tk(find_circle(tk_to_cv2(select_photo())))
 

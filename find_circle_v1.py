@@ -5,7 +5,7 @@ import numpy as np
 
 def find_circle():
     # 検出する画像の選択(プログラム実行時に選択できるようにしたいなぁ...)
-    path = "2022-06-21 (83).png"
+    path = "capture.png"
     # OpenCVでの画像の読み込み
     img = cv2.imread(path)
 
@@ -36,6 +36,8 @@ def find_circle():
 
         # 画像の表示
         cv2.imshow('img2', img_resize)
+
+        #キーボードで何か押すのを待つ(このあとのは何もないので何を押しても終了する．)
         cv2.waitKey(0)
 
     else: #円が検出されなかった場合

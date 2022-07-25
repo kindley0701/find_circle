@@ -93,6 +93,8 @@ def find_circle(img):
 
         # 画像の表示
         cv2.imshow('img2', img_resize)
+        
+        #キーボードで何か押すのを待つ(このあとのは何もないので何を押しても終了する．)
         cv2.waitKey(0)
 
     else: #円が検出されなかった場合
