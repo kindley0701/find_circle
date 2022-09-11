@@ -5,7 +5,7 @@ import numpy as np
 
 def find_circle():
     # 検出する画像の選択(プログラム実行時に選択できるようにしたいなぁ...)
-    path = "capture.png"
+    path = "capture5.png"
     # OpenCVでの画像の読み込み
     img = cv2.imread(path)
 

@@ -1,12 +1,12 @@
 import cv2
 
 #入力画像
-image = cv2.imread('capture.png')
+image = cv2.imread('capture4.png')
 
 #画像のサイズ縮小
 height = image.shape[0]
 width = image.shape[1]
-image = cv2.resize(image,(round(width/4), round(height/4)))
+image = cv2.resize(image,(round(width*0.5), round(height*0.5)))
 
 image_copy1 = image.copy()
 #グレースケール化
