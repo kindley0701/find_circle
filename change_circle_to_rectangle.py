@@ -7,9 +7,6 @@ path = "capture5.png"
 # OpenCVでの画像の読み込み
 img = cv2.imread(path)
 
-#フォントの指定(個数を書きだす用)
-fontType = cv2.FONT_HERSHEY_COMPLEX
-
 #変換フラグ(キュービック補間 + 外れ値塗りつぶし + 極座標へのリニアマッピング)
 flags = cv2.INTER_CUBIC + cv2.WARP_FILL_OUTLIERS + cv2.WARP_POLAR_LINEAR
 
