@@ -70,7 +70,7 @@ def find_circle(img):
     img_gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
     # 円を検出
-    circles = cv2.HoughCircles(img_gray, cv2.HOUGH_GRADIENT, dp=0.8, minDist=600, param1=100, param2=60, minRadius=100, maxRadius=400)
+    circles = cv2.HoughCircles(img_gray, cv2.HOUGH_GRADIENT, dp=0.8, minDist=600, param1=100, param2=10, minRadius=100, maxRadius=400)
     # HoughCircles(画像の取込，ハフ変換の手法，dp=解像度，minDist=円同士の最小距離，param1=わからん，param2=円検出レベル，minRadius=最小半径，maxRadius=最大半径)
 
     # numpyを用いて描画できる形に変換

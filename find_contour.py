@@ -1,7 +1,7 @@
 import cv2
 
 #入力画像
-image = cv2.imread('capture4.png')
+image = cv2.imread('capture9.png')
 
 #画像のサイズ縮小
 height = image.shape[0]
@@ -13,7 +13,7 @@ image_copy1 = image.copy()
 image_copy1 = cv2.cvtColor(image_copy1,cv2.COLOR_BGR2GRAY)
 
 #閾値処理
-ret,thresh = cv2.threshold(image_copy1,100,255,cv2.THRESH_BINARY)
+ret,thresh = cv2.threshold(image_copy1,30,255,cv2.THRESH_BINARY)
 #輪郭検出 （cv2.ChAIN_APPROX_SIMPLE）
 contours1, hierarchy1 = cv2.findContours(thresh, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
 
